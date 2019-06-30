@@ -1,0 +1,16 @@
+/* line 4, /Users/energyrating/gulpProject/src/scss/main.scss */
+h2 {
+  background-color: #000000;
+  color: red;
+  font-family: arial;
+  font-size: 30px;
+  width: 71.42857%; }
+
+/* line 11, /Users/energyrating/gulpProject/src/scss/main.scss */
+p {
+  font-weight: 600;
+  text-align: center;
+  overflow: auto;
+  color: #ffffff; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,10 @@
+<head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Bootstrap 101 Template</title><link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet"><script src="../../angular/js/bootstrap.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script><link href="../../angular/css/bootstrap.min.css" rel="stylesheet"> <!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]--></head><div ng-app="myApp" ng-controller="technologiesCtrl"><div class="container"><div class="row"><div><div class="col-md-3 col-sm-6" ng-repeat="x in myData | filter: comp"><div id="jumbo" class="jumbotron text-center rounded-0"> <a ng-href="/{{x.imgurl}}"><img class="img-responsive center-block" ng-src="{{x.img}}"/></a><p ng-class="(x.title.bckColour=='electrical') ? 'electrical' : 'data'">{{x.title.name}}</p><ul class="jumboBackground"><a ng-href="/{{x.item1.url}}"><li>{{x.item1.name}}</li></a><a ng-href="/{{x.item2.url}}"><li>{{x.item2.name}}</li></a><a ng-href="/{{x.item3.url}}"><li>{{x.item3.name}}</li></a><a ng-href="/{{x.item4.url}}"><li>{{x.item4.name}}</li></a> <button type="button" ng-class="articles-found"class=" btn-new center-block btn btn-primary btn-lg ">Book Now</button></ul></div></div></div></div></div></div><script>
+    var app = angular.module('myApp', []);
+    app.controller('technologiesCtrl', function($scope, $http, $log) {
+        $http.get("../../angular/js/electrician.json").then(function(response) {
+            $scope.myData = response.data.electrician;
+            $log.info("new value:", $scope.myData);
+            $scope.currentColor = "electrical";
+        });
+    });
+</script>

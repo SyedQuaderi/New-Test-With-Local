@@ -1,0 +1,17 @@
+/* line 7, /Users/energyrating/gulpProject/src/scss/styles.scss */
+body {
+  padding-top: 75px; }
+
+/* line 11, /Users/energyrating/gulpProject/src/scss/styles.scss */
+p {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: exo;
+  font-size: 29px;
+  width: 100%; }
+
+/* line 18, /Users/energyrating/gulpProject/src/scss/styles.scss */
+.brandLogo img {
+  width: 100px; }
+
+/*# sourceMappingURL=styles.css.map */

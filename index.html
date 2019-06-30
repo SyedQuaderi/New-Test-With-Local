@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en" ng-app="myApp" ng-controller="technologiesCtrl">
+<head>
+  <meta charset="utf-8">
+  <title>MySassyApp</title>
+  <link rel="icon" href="/src/fonts/syedportfolio.png"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/bootstrap.css">
+    <link rel="stylesheet" href="src/css/bootsnav.css">
+    <!--endbuild-->
+    
+    <!--build:js js/main.min.js -->
+    <script src="src/js/angular.min.js"></script>
+    <script src="src/js/angular-messages.min.js"></script>
+    <script src="src/js/angular-resource.min.js"></script>
+    <script src="src/js/jQuery.js"></script>
+    <!-- endbuild -->    
+
+    <!--build:js lib/jquery.min.js -->
+    <script src="src/js/jquery.min.js"></script>
+    <!-- endbuild --> 
+    
+    <!--build:js lib/bootstrap.min.js -->
+    <script src="src/js/bootstrap.min.js"></script>
+    <!-- endbuild -->   
+    
+    <!--build:js js/files.JSON -->
+    <script src="src/js/files.JSON"></script>
+    <!-- endbuild --> 
+  
+</head> 
+<body class="container-fluid background">
+    <div ng-include="'src/html/header.html'"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col"> 
+                <img class="img-fluid w-100" ng-src=""><br/><br/>
+                <!--This code show all the elements from the Json file    -->      
+                <br/>
+                <br />
+                <div class="container headerBackgroundColor">
+                    <div class="row">
+                        <div class="col text-left">
+                            <p>Women's tops</p>
+                        </div>
+                        <div class="col">
+                            <!--<form class="form-inline"><span class="glyphicon glyphicon-search"></span>
+                                <select  ng-model="currentSize" ng-options="z.size for z in myData">
+                                  <option value="">Filter by Size</option>
+                                </select>
+                            </form>-->
+                        </div>
+                    </div>
+                </div><br/>
+                <div class="container">
+                    <div class="row">
+                        <div class="col removeGutter" ng-repeat="x in myData">
+                            <div id="jumbo" class="jumbotron text-center rounded-0"> 
+                                <a ng-href="/{{x.imgurl}}"><img class="img-responsive center-block" ng-src="{{x.productImage}}"/></a>
+                                <div class="row">
+                                     <div class="col">
+                                    <p ng-class="x.isSale== true? 'saleProduct' : x.isExclusive== true? 'exclusiveProduct': 'noOffer'">{{x.isSale == true? 'Sale' : x.isExclusive == true? 'Exclusive' : 'noOffer' }}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="productName">{{x.productName}}</p>
+                                    </div>
+                                    <div class="col-3 paddingLeftZero">
+                                        <p class="productPrice">{{x.price}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <p class="text-center"> Below is the example using drop down filters</p>
+                <br />
+                <!-- This code is for filtering the given content to show how to filter the data based on the drop down selected items.-->
+                <div class="container headerBackgroundColor">
+                    <div class="row">
+                        <div class="col text-left">
+                            <p>Women's tops</p>
+                        </div>
+                        <div class="col text-right">
+                            <form class="form-inline">
+                                <select  ng-model="currentSize" ng-options="z.size for z in myData">
+                                  <option value="">Filter by Size</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                </div><br/>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12" >
+                            <div id="jumbo" class="jumbotron text-center rounded-0"> 
+                                <a ng-href="/{{x.imgurl}}"><img class="img-responsive center-block" ng-src="{{currentSize.productImage}}"/></a>
+                                <div class="row">
+                                    <div class="col">
+                                    <p ng-class="currentSize.isSale== true? 'saleProduct' : currentSize.isExclusive== true? 'exclusiveProduct': 'noOffer'">{{currentSize.isSale == true? 'Sale' : currentSize.isExclusive == true? 'Exclusive' : '' }}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="productName">{{currentSize.productName}}</p>
+                                    </div>
+                                    <div class="col text-right">
+                                        <p class="productPrice">{{currentSize.price}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-include="'src/html/footer.html'"></div>
+        <script>
+            var app = angular.module('myApp', [ ]);
+    app.controller('technologiesCtrl',['$scope', '$http', '$log', '$location', '$interval', function($scope, $http, $log, $location, $interval) {
+        $http.get("../src/js/files.JSON").then(function(response) {
+            $scope.myData = response.data;
+            $log.info("new value:", $scope.myData);
+            $scope.currentSize = $scope.myData[2];    
+            $log.info("new value:", $scope.currentSize);
+        });
+    }]);
+        </script>
+    </body>
+</html>

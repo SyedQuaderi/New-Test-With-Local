@@ -1,0 +1,199 @@
+{
+  "electrician": [
+    
+    {
+      "title": {
+        "name": "ELECTRICAL EMERGENCY",
+        "bckColour": "electrical"  
+      },
+      "img": "../../angular/images/electrical/electrical-emergency.jpg",
+      "imgurl":"../../electrical/emergency-electrician/",
+      "item1": {
+        "name": "Power Failure",
+        "url": "../../electrical/power-failure/"
+      },
+      "item2": {
+        "name": "House Rewiring",
+        "url": "../../electrical/house-rewiring/"
+      },
+      "item3": {
+        "name": "Electrical Emergency",
+        "url": "../../electrical/emergency-electrician/"
+      },
+      "item4": {
+        "name": "Power Emergencies",
+        "url": "../../electrical/power-failure/"
+      }
+    },
+    
+    {
+      "title": {
+          "name": "GENERAL ELECTRICAL",
+          "bckColour": "electrical"
+      },
+      "img": "../../angular/images/electrical/general-electrical.jpg",
+      "imgurl":"../../diagnose-repair-install/electrical-installations/",
+      "item1": {
+        "name": "Smoke Alarm",
+        "url": "../../electrical/smoke-alarm-installation/"
+      },
+      "item2": {
+        "name": "Power Points",
+        "url": "../../electrical/power-points-installation/"
+      },
+      "item3": {
+        "name": "3 in 1 Heater Fan Light",
+        "url": "../../electrical/3-in-1-bathroom-heater-light-fan/"
+      },
+      "item4": {
+        "name": "LED dimmers",
+        "url": "../../electrical/led-dimmers/"
+      }
+    },
+    
+    {
+      "title": {
+        "name": "LIGHTING",
+        "bckColour": "electrical" 
+      },
+      "img": "../../angular/images/electrical/lighting.jpg",
+      "imgurl":"../../diagnose-repair-install/electrical-installations/",
+      "item1": {
+        "name": "LED Lighting",
+        "url": "../../electrical/led-lighting/"
+      },
+      "item2": {
+        "name": "Sensor Light",
+        "url": "../../electrical/install-sensor-light/"
+      },
+      "item3": {
+        "name": "Interior Lighting",
+        "url": "../../electrical/interior-lighting/"
+      },
+      "item4": {
+        "name": "Outdoor Lighting",
+        "url": "../../electrical/outdoor-lighting/"
+      }
+    },
+    {
+      "title": {
+        "name": "DATA & SECURITY",
+        "bckColour": "data" 
+      }, 
+      "img": "../../angular/images/electrical/data&security.jpg",
+      "imgurl":"../../diagnose-repair-install/digital-antennas-adelaide/",
+      "item1": {
+        "name": "Home Security",
+        "url": "../../electrical/home-security/"
+      },
+      "item2": {
+        "name": "Digital TV Reception",
+        "url": "../../tv-and-data/digital-tv-reception/"
+      },
+      "item3": {
+        "name": "Interior Lighting",
+        "url": "../../tv-and-data/foxtel-for-multiple-rooms/"
+      },
+      "item4": {
+        "name": "Digital TV Antennas",
+        "url": "../../tv-and-data/"
+      }
+    },
+    {
+      "title": {
+        "name": "ELECTRICAL SAFETY",
+        "bckColour": "electrical" 
+      }, 
+      "img": "../../angular/images/electrical/electrical-safety.jpg",
+      "imgurl":"../../diagnose-repair-install/electrical-installations/",
+      "item1": {
+        "name": "Safety Switch",
+        "url": "../../electrical/safety-switch-installation/"
+      },
+      "item2": {
+        "name": "Switchboard Upgrades",
+        "url": "../../electrical/switchboard-upgrades/"
+      },
+      "item3": {
+        "name": "Electrical Inspection",
+        "url": "../../electrical/electrical-inspection/"
+      },
+      "item4": {
+        "name": "Fuse Box Faults",
+        "url": "../../electrical/fuse-box-repairs/"
+      }
+    },
+    {
+      "title": {
+        "name": "COMMERCIAL",
+        "bckColour": "electrical" 
+      },
+      "img": "../../angular/images/electrical/commercial.jpg",
+      "imgurl":"../../diagnose-repair-install/electrical-installations/",
+      "item1": {
+        "name": "Backup Generators",
+        "url": "../../electrical/backup-generator/"
+      },
+      "item2": {
+        "name": "Office Fitouts",
+        "url": "../../electrical/office-fitouts/"
+      },
+      "item3": {
+        "name": "Shop Fitouts",
+        "url": "../../electrical/shop-fitouts/"
+      },
+      "item4": {
+        "name": "UPS and Generators",
+        "url": "../../electrical/ups-and-generators/"
+      }
+    },
+    {
+      "title": {
+        "name": "CEILING FANS",
+        "bckColour": "electrical" 
+      }, 
+      "img": "../../angular/images/electrical/ceiling-fan.jpg",
+      "imgurl":"../../diagnose-repair-install/electrical-installations/",
+      "item1": {
+        "name": "Ceiling Fans",
+        "url": "../../electrical/ceiling-fans/"
+      },
+      "item2": {
+        "name": "Ventilation",
+        "url": "../../electrical/ventilation/"
+      },
+      "item3": {
+        "name": "Exhaust Fans",
+        "url": "../../electrical/exhaust-fans/"
+      },
+      "item4": {
+        "name": "Axial Fans",
+        "url": "../../electrical/axial-fans/"
+      }
+    },
+    {
+      "title": {
+        "name": "ELECTRIC COOKING",
+        "bckColour": "electrical"  
+      },
+      "img": "../../angular/images/electrical/electric-cooking.jpg",
+      "imgurl":"../../diagnose-repair-install/electrical-installations/",
+      "item1": {
+        "name": "Cooktop Installation",
+        "url": "../../electrical/cooktop-installation/"
+      },
+      "item2": {
+        "name": "Oven installation",
+        "url": "../../electrical/oven-installation/"
+      },
+      "item3": {
+        "name": "Electric Hotplates",
+        "url": "../../electrical/electric-hotplates/"
+      },
+      "item4": {
+        "name": "Oven Repairs",
+        "url": "../../electrical/oven-repairs/"
+      }
+    }
+  ]
+}
