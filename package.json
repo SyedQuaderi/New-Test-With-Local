@@ -25,7 +25,7 @@
   "dependencies": {
     "angular": "^1.7.6",
     "autoprefixer": "^9.3.1",
-    "bootstrap": "^4.1.1",
+    "bootstrap": "^4.3.1",
     "browser-sync-client": "^2.26.2",
     "bs-html-injector": "^3.0.3",
     "css-mqpacker": "^7.0.0",
